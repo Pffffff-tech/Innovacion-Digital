@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Innovación Digital JRTech ofrece atención personalizada, precios bajos y soporte técnico directo con el dueño Albeiro López.">
+    <title>Innovación Digital JRTech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <h1><i class="fas fa-robot"></i> INNOVACIÓN DIGITAL JRTECH <i class="fas fa-user-tie"></i></h1>
+        <p>TE ATIENDE EL DUEÑO, NO ROBOTS - Albeiro Lopez</p>
+    </div>
+
+    <!-- MENÚ CON DESPLEGABLE PARA CATÁLOGO -->
+    <nav role="navigation">
+        <div class="menu">
+        <button onclick="mostrar('ventajas')"><i class="fas fa-check-circle"></i> Ventajas</button>
+        
+        <!-- CATÁLOGO DESPLEGABLE CON ENLACES -->
+        <div class="menu-item">
+            <button class="dropbtn" aria-haspopup="true" aria-expanded="false"><i class="fas fa-book"></i> Catálogo <i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+                <a href="https://script.google.com/macros/s/AKfycbxkuvsMJJnKJipugux0k0vrMzqh_I9oz2-nsy4sPoQzbTSHbCildLoHzr8qvHMmG7eCPQ/exec?view=CELULARES" target="_blank"><i class="fas fa-mobile-alt"></i> Celulares</a>
+                <a href="https://script.google.com/macros/s/AKfycbxkuvsMJJnKJipugux0k0vrMzqh_I9oz2-nsy4sPoQzbTSHbCildLoHzr8qvHMmG7eCPQ/exec?view=tablets" target="_blank"><i class="fas fa-tablet-alt"></i> Tablets</a>
+                <a href="https://script.google.com/macros/s/AKfycbxkuvsMJJnKJipugux0k0vrMzqh_I9oz2-nsy4sPoQzbTSHbCildLoHzr8qvHMmG7eCPQ/exec?view=portatiles" target="_blank"><i class="fas fa-laptop"></i> Computadores</a>
+            </div>
+        </div>
+        
+        <button onclick="mostrar('beneficios')"><i class="fas fa-gift"></i> Beneficios</button>
+        <button onclick="mostrar('barato')"><i class="fas fa-tag"></i> Barato</button>
+        <button onclick="mostrar('garantia')"><i class="fas fa-shield-alt"></i> Garantía</button>
+        <button onclick="mostrar('perfil')"><i class="fas fa-user"></i> Dueño</button>
+        </div>
+    </nav>
+
+    <main role="main">
+        <div class="container" id="contenido">
+        <section id="ventajas" class="lista-ventajas">
+            <h2 style="color:white"><i class="fas fa-check-circle"></i> Ventajas y Diferenciales</h2>
+            <ul>
+                <li><i class="fas fa-headset"></i> <strong>Atención personalizada:</strong> Hablas directamente con Albeiro, el dueño</li>
+                <li><i class="fas fa-truck"></i> <strong>Envío gratis:</strong> Para todos los productos</li>
+                <li><i class="fas fa-shield-alt"></i> <strong>Garantía extendida:</strong> 1 año directa con el fabricante</li>
+                <li><i class="fas fa-clock"></i> <strong>Soporte remoto:</strong> Disponible por WhatsApp</li>
+                <li><i class="fas fa-laptop"></i> <strong>Windows/Office original:</strong> Licencias que no vencen</li>
+                <li><i class="fas fa-gift"></i> <strong>Obsequios:</strong> Funda + mouse de regalo</li>
+                <li><i class="fas fa-user-friends"></i> <strong>Amigo experto:</strong> Consultas gratis de por vida</li>
+                <li><i class="fab fa-whatsapp"></i> <strong>Club WhatsApp:</strong> Descuentos exclusivos y comisiones por referidos</li>
+                <li><i class="fas fa-file-invoice"></i> <strong>Empresa legal:</strong> Factura electrónica, pagamos impuestos</li>
+                <li><i class="fas fa-heart"></i> <strong>Trato humano:</strong> Te atiende el dueño, no robots</li>
+            </ul>
+
+
+            <div class="reseñas-interno">
+                <h3><i class="fas fa-star"></i> Lo que dicen nuestros clientes</h3>
+
+                <script src="https://elfsightcdn.com/platform.js" async></script>
+                <div class="elfsight-app-1644a947-90b8-4d1a-8bb0-ed4a17c49aa8" data-elfsight-app-lazy></div>
+            </div>
+        </section>
+
+        <section id="beneficios" style="display:none">
+            <h2><i class="fas fa-gift"></i> Beneficios</h2>
+            <div class="beneficios-grid">
+                <div class="beneficio-card"><i class="fas fa-wallet"></i><h3>Sin Intermediarios</h3><p>Compra directa de fábrica</p></div>
+                <div class="beneficio-card"><i class="fas fa-undo-alt"></i><h3>30 días cambios</h3><p>Sin preguntas</p></div>
+                <div class="beneficio-card"><i class="fas fa-tools"></i><h3>Soporte gratis</h3><p>De por vida</p></div>
+                <div class="beneficio-card"><i class="fas fa-credit-card"></i><h3>12 cuotas</h3><p>Sin intereses</p></div>
+            </div>
+        </section>
+
+        <section id="barato" style="display:none">
+            <!-- imagen con texto alternativo más descriptivo -->            <h2><i class="fas fa-tag"></i> ¿Por qué barato?</h2>
+            <div class="barato-content">
+                <div class="barato-texto">
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> <strong>Sin intermediarios:</strong> Compramos directo de fábrica</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Sin publicidad:</strong> El dueño atiende personalmente</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Local propio:</strong> No pagamos arriendo comercial</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Margen justo:</strong> Venta por volumen, ganancia pequeña</li>
+                    </ul>
+                </div>
+                <div class="barato-img">
+                    <img src="https://images.unsplash.com/photo-1607083206869-4c7672e72a8a" alt="Precios bajos">
+                </div>
+            </div>
+        </section>
+
+        <section id="garantia" style="display:none">
+            <h2><i class="fas fa-shield-alt"></i> Garantía</h2>
+            <div class="garantia-card">
+                <p><i class="fas fa-check-circle" style="color:#27ae60"></i> <strong>Cubre:</strong> Fallas de fábrica en equipos nuevos y usados</p>
+                <p><i class="fas fa-times-circle" style="color:#e74c3c"></i> <strong>No cubre:</strong> Golpes, caídas, humedad, pantallas +30 días</p>
+                <p><i class="fas fa-hourglass-half" style="color:#3498db"></i> <strong>Duración:</strong> Nuevos 1 año | Usados 3 meses | Accesorios 30 días</p>
+                <p><i class="fas fa-file-alt" style="color:#3498db"></i> <strong>Requisitos:</strong> Factura y equipo sin alterar</p>
+            </div>
+            <a href="https://wa.me/573128590469?text=Hola%20Albeiro,%20necesito%20mi%20garantía" class="btn-wa" style="margin-top:15px;" target="_blank"><i class="fab fa-whatsapp"></i> Solicitar garantía</a>
+        </section>
+
+        <section id="perfil" style="display:none">
+            <h2><i class="fas fa-user-tie"></i> El Dueño</h2>
+            <div class="perfil-content">
+                <div class="perfil-img">
+                    <img src="https://media-bog2-2.cdn.whatsapp.net/v/t61.24694-24/470595607_1312672709739053_1245235785668207503_n.jpg?ccb=11-4&oh=01_Q5Aa3wHp2r7jeuvL-iF3upsgP5T-ht6j_Jd1UZ3c9ugqZ9gs0A&oe=69AF0319&_nc_sid=5e03e0&_nc_cat=109" alt="Foto de Albeiro Lopez, dueño de JRTech">
+                </div>
+                <div>
+                    <h3 style="font-size:1.5rem;">Albeiro Lopez</h3>
+                    <p><i>"Te atiendo YO personalmente, no un robot"</i></p>
+                    <p>Ingeniero en sistemas - 15 años de experiencia</p>
+                    <p>Fundador de Innovación Digital JRTech</p>
+                    <div class="perfil-contacto">
+                        <a href="https://wa.me/573128590469" target="_blank"><i class="fab fa-whatsapp"></i> 312 859 0469</a>
+                        <a href="mailto:albeiro.jr@gmail.com" class="email"><i class="fas fa-envelope"></i> albeiro.jr@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <a href="https://wa.me/573128590469" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Innovación Digital JRTech - Albeiro Lopez</p>
+        <p style="margin-top:5px;">📧 albeiro.jr@gmail.com | 📱 312 859 0469</p>
+    </footer>
+
+    <script>
+        function mostrar(id) {
+            // cambiar visibilidad y clase activa en botones
+            const target = document.getElementById(id);
+            if (!target) return;
+            document.querySelectorAll('section').forEach(s => s.style.display = 'none');
+            target.style.display = 'block';
+            // actualizar aria-expanded de dropdown si corresponde
+            const drop = document.querySelector('.dropbtn');
+            if (drop) drop.setAttribute('aria-expanded', 'false');
+        }
+        // control básico de accesibilidad para dropdown
+        document.addEventListener('DOMContentLoaded', () => {
+            const drop = document.querySelector('.dropbtn');
+            if (drop) {
+                drop.addEventListener('click', () => {
+                    const expanded = drop.getAttribute('aria-expanded') === 'true';
+                    drop.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7fb;
+}
+
+/* ===== HEADER ===== */
+.header {
+    background: linear-gradient(135deg, #667eea, #5a4fcf);
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    border-bottom: 4px solid #f39c12;
+}
+
+.header h1 {
+    font-size: clamp(1.2rem, 4vw, 2rem);
+}
+
+.header p {
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+    margin-top: 5px;
+}
+
+/* ===== NAVBAR CON DESPLEGABLE ===== */
+.menu {
+    background: #1a2b4c;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.menu-item {
+    position: relative;
+    display: inline-block;
+}
+
+.menu button, .dropbtn {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    min-width: 100px;
+    justify-content: center;
+}
+
+.menu button i, .dropbtn i {
+    font-size: 1rem;
+}
+
+.menu button:hover, .dropbtn:hover {
+    background: #f39c12;
+    color: #1a2b4c;
+}
+
+.menu .btn-wa {
+    background: #25d366;
+}
+
+.menu .btn-wa:hover {
+    background: #128C7E;
+    color: white;
+}
+
+/* CONTENIDO DESPLEGABLE */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 5px;
+}
+
+.dropdown-content a {
+    color: #1a2b4c;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #eef2f6;
+    transition: 0.3s;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content a:hover {
+    background: #f39c12;
+    color: white;
+}
+
+.dropdown-content a i {
+    width: 20px;
+    color: #3498db;
+}
+
+.menu-item:hover .dropdown-content {
+    display: block;
+}
+
+/* ===== CONTENEDOR ===== */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+/* ===== SECCIONES ===== */
+section {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+h2 {
+    text-align: center;
+    font-size: clamp(1.3rem, 4vw, 2rem);
+    margin-bottom: 20px;
+    color: #1a2b4c;
+}
+
+h2 i {
+    color: #f39c12;
+    margin-right: 10px;
+}
+
+/* ===== LISTA VENTAJAS ===== */
+.lista-ventajas {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.lista-ventajas ul {
+    list-style: none;
+}
+
+.lista-ventajas li {
+    margin: 18px 0;
+    font-size: clamp(1rem, 2.2vw, 1.2rem);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.lista-ventajas li:last-child {
+    border-bottom: none;
+}
+
+.lista-ventajas li i {
+    color: #f39c12;
+    font-size: 1.5rem;
+    min-width: 30px;
+    text-align: center;
+}
+
+.lista-ventajas li strong {
+    color: #f39c12;
+    margin-right: 5px;
+}
+
+/* ===== SECCIÓN DE RESEÑAS DENTRO DE VENTAJAS ===== */
+.reseñas-interno {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid rgba(255,255,255,0.3);
+}
+
+.reseñas-interno h3 {
+    color: #f39c12;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.reseñas-interno h3 i {
+    margin-right: 10px;
+}
+
+/* ===== BOTONES ===== */
+.btn-wa {
+    display: inline-block;
+    background: #25d366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.btn-wa:hover {
+    background: #128C7E;
+}
+
+/* ===== BENEFICIOS ===== */
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.beneficio-card {
+    background: #f8fafd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border-left: 4px solid #3498db;
+}
+
+.beneficio-card i {
+    font-size: 2rem;
+    color: #3498db;
+    margin-bottom: 8px;
+}
+
+/* ===== BARATO ===== */
+.barato-content {
+    display: block;
+}
+
+.barato-texto ul {
+    list-style: none;
+}
+
+.barato-texto li {
+    margin: 15px 0;
+    font-size: clamp(1rem, 2.2vw, 1.1rem);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid #eef2f6;
+}
+
+.barato-texto li i {
+    color: #27ae60;
+    font-size: 1.3rem;
+    min-width: 25px;
+}
+
+.barato-img {
+    margin-top: 20px;
+}
+
+.barato-img img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* ===== GARANTÍA ===== */
+.garantia-card {
+    background: #f8fafd;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.garantia-card p {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ===== PERFIL ===== */
+.perfil-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: center;
+}
+
+.perfil-img img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    border: 4px solid #3498db;
+    margin: 0 auto;
+    display: block;
+}
+
+.perfil-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.perfil-contacto a {
+    flex: 1 1 auto;
+    padding: 10px 15px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.perfil-contacto .email {
+    background: #e74c3c;
+}
+
+/* ===== WHATSAPP FLOTANTE ===== */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 999;
+    text-decoration: none;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #1a2b4c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    clear: both;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        padding: 10px;
+        position: relative;
+    }
+    
+    .menu-item {
+        width: 100%;
+    }
+
+    .menu button, .dropbtn {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        margin-top: 5px;
+        display: none;
+    }
+
+    .menu-item:hover .dropdown-content {
+        display: block;
+    }
+
+    .perfil-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .perfil-contacto {
+        flex-direction: column;
+    }
+
+    .perfil-contacto a {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .beneficios-grid {
+        grid-template-columns: 1fr;
+    }
+}
