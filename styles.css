@@ -155,11 +155,11 @@ h2 i {
 
 /* ===== LISTA VENTAJAS ===== */
 .lista-ventajas {
-    background: linear-gradient(135deg, #3498db, #2980b9);
-    color: white;
-    border-radius: 15px;
-    padding: 25px;
-    margin-bottom: 20px;
+    background: #f8fafd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border-left: 4px solid #3498db;
 }
 
 .lista-ventajas ul {
@@ -181,7 +181,7 @@ h2 i {
 }
 
 .lista-ventajas li i {
-    color: #f39c12;
+    color: black;
     font-size: 1.5rem;
     min-width: 30px;
     text-align: center;
@@ -414,3 +414,4 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
